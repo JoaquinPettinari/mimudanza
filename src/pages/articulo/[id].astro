@@ -19,8 +19,8 @@ const { article } = Astro.props;
 
 <Layout title={article.title}>
   <section class="h-full p-5 lg:pt-32 flex flex-col md:flex-row">
-    <ArticleCarousel client:load id={id} />
-    <div class="p-6 flex flex-col gap-5">
+    <ArticleCarousel client:load id={id} photos={article.photos} />
+    <div class="p-6 w-1/2 flex flex-col gap-5">
       <a href="/">
         <h3 class="text-gray-500 text-base">Volver</h3>
       </a>

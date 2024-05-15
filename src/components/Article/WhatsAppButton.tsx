@@ -17,8 +17,8 @@ function WhatsAppButton({ title, id, url }: WhatsAppButtonProps) {
     );
   }, [id, title, url]);
   return (
-    <a href={linkToWhatsApp}>
-      <button className="flex items-center gap-3 bg-[#25d466] rounded-full p-4 w-auto justify-center">
+    <a href={linkToWhatsApp} className="w-2/3">
+      <button className="flex items-center gap-3 bg-[#25d466] rounded-full p-4 w-full justify-center">
         <span className="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[white]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
