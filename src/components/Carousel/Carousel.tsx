@@ -23,7 +23,11 @@ function ArticleCarousel({ id, photos }: ArticleCarouselProps) {
       >
         {getImages.map((image, index) => (
           <div key={index}>
-            <img src={image} alt={`Imagen de ${id}`} className="h-[500px]" />
+            <img
+              src={image}
+              alt={`Imagen de ${id}`}
+              className="h-[500px] object-contain"
+            />
           </div>
         ))}
       </Carousel>

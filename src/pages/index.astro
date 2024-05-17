@@ -10,7 +10,9 @@ const categories = await getCategories();
 <Layout title="¡A la venta! Nos mudamos">
   <section class="p-3 md:p-9">
     <header>
-      <h2 class="font-normal text-4xl text-center">Artículos a la venta</h2>
+      <h2 class="font-normal text-4xl text-center hidden md:block">
+        Artículos a la venta
+      </h2>
     </header>
     <Market client:load categories={categories} articles={articles} />
   </section>
