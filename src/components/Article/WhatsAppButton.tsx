@@ -13,7 +13,7 @@ function WhatsAppButton({ title, id, url }: WhatsAppButtonProps) {
 
   const linkToWhatsApp = useMemo(() => {
     return makeWhatsAppLink(
-      `¡Hola! 👋\nEstoy viendo el sitio de la mudanza y me gustaría comprar *${title}*.\nhttps://vendemos-todo.vercel.app/articulos/${id}`
+      `¡Hola! 👋\nEstoy viendo el sitio de la mudanza y me gustaría comprar *${title}*.\nhttps://vendemos-todo.vercel.app/articulo/${id}`
     );
   }, [id, title, url]);
   return (
