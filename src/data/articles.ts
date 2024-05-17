@@ -92,7 +92,7 @@ export const ARTICLES = [
     id: "monitor",
     title: "Monitor Curvo Samsung Odyssey G5 27' 2K 144hz",
     category: CATEGORIAS.Tecnologia,
-    price: 250000,
+    price: 350000,
     description:
       "Monitor con poco uso, tiene 2 años de uso. Perfecto para trabajar, estudiar o jugar.",
     photos: 1,
@@ -110,7 +110,7 @@ export const ARTICLES = [
     id: "parlantes",
     title: "Parlantes Edifier R1100",
     category: CATEGORIAS.Tecnologia,
-    price: 120000,
+    price: 150000,
     description: `
       Potencia de salida: 42 Watts (RMS) - L/R: 21 W + 21 W.
       Respuesta de frecuencia: 65 Hz ~ 20 kHz
