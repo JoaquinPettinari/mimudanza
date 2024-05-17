@@ -25,7 +25,11 @@ const { article } = Astro.props;
         <h3 class="text-gray-500 text-base">Volver</h3>
       </a>
       <h2 class="text-2xl">{article.title}</h2>
-      <CurrentPrice price={article.price} ask={article.ask} />
+      <CurrentPrice
+        price={article.price}
+        ask={article.ask}
+        reserved={article.reserved}
+      />
       <h3 class="text-xl">{article.description}</h3>
       <WhatsAppButton
         client:load

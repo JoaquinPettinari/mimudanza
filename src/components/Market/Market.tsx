@@ -46,7 +46,7 @@ function Market({ categories, articles }: MarketProps) {
         </div>
       </header>
       <article className="pt-9 grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
-        {filteredArticles.map(({ id, title, price, ask }, index) => {
+        {filteredArticles.map(({ id, title, price, ask, reserved }, index) => {
           return (
             <section
               key={index}
@@ -61,7 +61,7 @@ function Market({ categories, articles }: MarketProps) {
                   />
                   <div className="p-6">
                     <h2 className="text-2xl mb-3">{title}</h2>
-                    <CurrentPrice price={price} ask={ask} />
+                    <CurrentPrice price={price} ask={ask} reserved={reserved} />
                   </div>
                 </div>
               </a>

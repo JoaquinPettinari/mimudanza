@@ -3,9 +3,10 @@ export interface Article {
   title: string;
   category: string;
   price: number;
-  ask?: boolean;
   description: string;
   photos: number;
+  ask?: boolean;
+  reserved?: boolean;
 }
 
 enum CATEGORIAS {
@@ -166,6 +167,7 @@ export const ARTICLES = [
     description:
       "Mesa de cama portátil plegable para la cama, escritorio, sillón la llevas donde quieres.",
     photos: 1,
+    reserved: true,
   },
   {
     id: "mesa_de_luz",
