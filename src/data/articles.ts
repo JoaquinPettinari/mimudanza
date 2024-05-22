@@ -7,6 +7,7 @@ export interface Article {
   photos: number;
   ask?: boolean;
   reserved?: boolean;
+  sold?: boolean;
 }
 
 enum CATEGORIAS {
@@ -70,6 +71,7 @@ export const ARTICLES = [
     description:
       "Marca BladeRunner, modelo Pro 80 ajustables con frenos. Nuevos sin uso, talle 40, en caja.",
     photos: 8,
+    sold: true,
   },
   {
     id: "melomano",
