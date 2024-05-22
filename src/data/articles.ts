@@ -36,6 +36,7 @@ export const ARTICLES = [
     price: 150000,
     description: "Comprada nueva hace 8 meses actualmente sin uso.",
     photos: 3,
+    reserved: true
   },
   {
     id: "just_one",
@@ -108,6 +109,7 @@ export const ARTICLES = [
     description:
       "Transmití y grabá videos vibrantes y realistas. La lente de vidrio y la resolución Full HD 1080p capturan los detalles más emocionantes, los colores brillantes y naturales en video fluido a 30 fps, mientras que el campo de visión de 78 grados tiene capacidad para dos personas. Utilizá la aplicación para hacer zoom y desplazar la cámara.",
     photos: 1,
+    reserved: true
   },
   {
     id: "parlantes",
@@ -179,5 +181,6 @@ export const ARTICLES = [
     description:
       "Mesita de Luz 1 Cajón Moderna 'ACHERY' en Melamina de Primera Calidad Marca 'MASISA'. Medidas: 0.45 x 0.50 x 0.35 Mts.",
     photos: 1,
+    reserved: true
   },
 ];
