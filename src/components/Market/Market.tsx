@@ -46,28 +46,36 @@ function Market({ categories, articles }: MarketProps) {
         </div>
       </header>
       <article className="pt-9 grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
-        {filteredArticles.map(({ id, title, price, ask, reserved }, index) => {
-          return (
-            <section
-              key={index}
-              className="rounded-2xl shadow-xl w-full hover:shadow-2xl "
-            >
-              <a href={`articulo/${id}`}>
-                <div className="flex flex-col">
-                  <img
-                    src={`/${id}_1.jpg`}
-                    alt={title}
-                    className="w-full h-96 rounded-t-2xl object-contain"
-                  />
-                  <div className="p-6">
-                    <h2 className="text-2xl mb-3">{title}</h2>
-                    <CurrentPrice price={price} ask={ask} reserved={reserved} />
+        {filteredArticles.map(
+          ({ id, title, price, ask, reserved, sold, discount }, index) => {
+            return (
+              <section
+                key={index}
+                className="rounded-2xl shadow-xl w-full hover:shadow-2xl "
+              >
+                <a href={`articulo/${id}`}>
+                  <div className="flex flex-col">
+                    <img
+                      src={`/${id}_1.jpg`}
+                      alt={title}
+                      className="w-full h-96 rounded-t-2xl object-contain"
+                    />
+                    <div className="p-6">
+                      <h2 className="text-2xl mb-3">{title}</h2>
+                      <CurrentPrice
+                        price={price}
+                        discount={discount}
+                        ask={ask}
+                        reserved={reserved}
+                        sold={sold}
+                      />
+                    </div>
                   </div>
-                </div>
-              </a>
-            </section>
-          );
-        })}
+                </a>
+              </section>
+            );
+          }
+        )}
       </article>
     </section>
   );
