@@ -7,6 +7,8 @@ export interface Article {
   photos: number;
   ask?: boolean;
   reserved?: boolean;
+  sold?: boolean;
+  discount?: number;
 }
 
 enum CATEGORIAS {
@@ -35,7 +37,7 @@ export const ARTICLES = [
     price: 150000,
     description: "Comprada nueva hace 8 meses actualmente sin uso.",
     photos: 3,
-    reserved: true
+    reserved: true,
   },
   {
     id: "just_one",
@@ -67,10 +69,11 @@ export const ARTICLES = [
     id: "rollers",
     title: "Rollers",
     category: CATEGORIAS.Fitness,
-    price: 180000,
+    price: 130000,
     description:
       "Marca BladeRunner, modelo Pro 80 ajustables con frenos. Nuevos sin uso, talle 40, en caja.",
     photos: 8,
+    discount: 45,
   },
   {
     id: "melomano",
@@ -89,6 +92,7 @@ export const ARTICLES = [
     description:
       "Al ser condensador, permite un resultado claro y fino. Es ideal para percusiones, guitarras, pianos, entre otros. Por su respuesta tan definida ante la voz, es el más elegido por los profesionales.",
     photos: 2,
+    discount: 10,
   },
   {
     id: "monitor",
@@ -107,7 +111,7 @@ export const ARTICLES = [
     description:
       "Transmití y grabá videos vibrantes y realistas. La lente de vidrio y la resolución Full HD 1080p capturan los detalles más emocionantes, los colores brillantes y naturales en video fluido a 30 fps, mientras que el campo de visión de 78 grados tiene capacidad para dos personas. Utilizá la aplicación para hacer zoom y desplazar la cámara.",
     photos: 1,
-    reserved: true
+    reserved: true,
   },
   {
     id: "parlantes",
@@ -150,6 +154,7 @@ export const ARTICLES = [
     description:
       "Tiene solamente 4 usos, está nueva. Tamaño empaque: 46 cm x 16 cm. Peso: 2,8 kg.",
     photos: 1,
+    discount: 10,
   },
   {
     id: "auto",
@@ -169,7 +174,7 @@ export const ARTICLES = [
     description:
       "Mesa de cama portátil plegable para la cama, escritorio, sillón la llevas donde quieres.",
     photos: 1,
-    reserved: true,
+    sold: true,
   },
   {
     id: "mesa_de_luz",
@@ -179,6 +184,6 @@ export const ARTICLES = [
     description:
       "Mesita de Luz 1 Cajón Moderna 'ACHERY' en Melamina de Primera Calidad Marca 'MASISA'. Medidas: 0.45 x 0.50 x 0.35 Mts.",
     photos: 1,
-    reserved: true
+    reserved: true,
   },
 ];
